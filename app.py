@@ -111,12 +111,8 @@ class Spec(tk.Frame):
         return row, label, entry
 
     def to_dict(self):
-        d = {'tool': self.tool.get(),
-             'chamber': self.chamber.get(),
-            }
-
+        d = {'tool': self.tool.get(), 'chamber': self.chamber.get()}
         d.update(parse_date(self.date.get()))
-
         return d
 
 if __name__ == '__main__':
